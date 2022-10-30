@@ -1,0 +1,5 @@
+{
+    "PORT": 5000,
+    "URL": "http://192.168.68.202:5000",
+    "PRIVATE_KEY": "codeforindia"
+}
