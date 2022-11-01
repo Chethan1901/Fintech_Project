@@ -1,20 +1,9 @@
 import mongoose from 'mongoose';
 
 let memberSchema = new mongoose.Schema({
-    memberName: {
-        type: String,
-        required: true,
-    },
     memberType: {
         type: String,
         required: true,
-    },
-    fatherHusbandName: {
-        type: String,
-        required: true,
-    },
-    adhaarNumber: {
-        type: Number,
     },
     address1: {
         houseNo: {
@@ -37,6 +26,18 @@ let memberSchema = new mongoose.Schema({
             type: String,
             required: true,
         },
+    },
+    pDetails : {
+    memberName: {
+        type: String,
+        required: true,
+    },
+    fatherHusbandName: {
+        type: String,
+        required: true,
+    },
+    adhaarNumber: {
+        type: Number,
     },
     gender: {
         type: String,
@@ -64,6 +65,7 @@ let memberSchema = new mongoose.Schema({
     occupation: {
         type: String,
         required: true,
+    },
     },
     mobileNo: {
         type: String,
