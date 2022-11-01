@@ -109,17 +109,7 @@ router.post(
 			}
 
 			let memberData = {
-				memberName,
 				memberType,
-				fatherHusbandName,
-				adhaarNumber,
-				gender,
-				dob,
-				email,
-				age,
-				caste,
-				religion,
-				occupation,
 				mobileNo,
 				bussinessType,
 				goodsService,
@@ -127,6 +117,19 @@ router.post(
 				bussinessDesc,
 				annualIncome,
 				sharePurchaseDate,
+			};
+
+			let pDetails = {
+				memberName,
+				fatherHusbandName,
+				occupation,
+				caste,
+				religion,
+				email,
+				age,
+				dob,
+				gender,
+				adhaarNumber,
 			};
 
 			let address1 = { houseNo, city, street, country, state };
@@ -144,6 +147,7 @@ router.post(
 
 			let bAddress = { bHouseNo, bCity, bStreet, bCountry, bState };
 
+			memberData.pDetails = pDetails;
 			memberData.address1 = address1;
 			memberData.pAddress = pAddress;
 			memberData.nominee = nominee;
